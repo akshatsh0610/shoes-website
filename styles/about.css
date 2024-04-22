@@ -1,0 +1,12 @@
+.about-nav-menu-left{
+    padding: 0 1rem;
+}
+.about-nav-menu-left a{
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: rgb(35, 35, 35);
+    font-weight: 500;
+}
+.about-nav-menu-left a:hover{
+    color: grey;
+}

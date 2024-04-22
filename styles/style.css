@@ -1,24 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    text-transform: capitalize;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    transition: all 0.3s ease-in;
-    scroll-behavior: smooth;
-}
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-}
-body{
-    background-color: rgb(208, 211, 211);
-}
 .btn{
     border: 2px solid rgb(248, 244, 244);
     background-color: black;
@@ -364,6 +343,7 @@ body{
 .footer .footer1{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 2rem 7%;
 }
 .footer1-help,.footer1-company{
@@ -372,10 +352,45 @@ body{
 }
 .footer1-help h5,.footer1-company h5{
     padding: 2rem 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .footer1-help a,.footer1-company a{
     padding: 1rem 0;
     color: rgb(177, 177, 177);
+    font-size: 1.2rem;
+}
+.footer1-help a:hover,.footer1-company a:hover{
+    color: aliceblue;
+    font-weight: 500;
+}
+.footer1-social-media{
+    padding-top: 2rem;
+}
+.footer1-social-media a{
+    font-size: 2rem;
+    color: aliceblue;
+    padding: 0 1rem;
+}
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 2rem;
+    font-size: 1.2rem;
+}
+.footer2-left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.footer2-left p{
+    padding:0 1rem;
+}
+.footer2-right a{
+    color: rgb(177, 177, 177);
+    padding: 0 2rem;
+}
+.footer2-right a:hover{
+    color: aliceblue;
 }
