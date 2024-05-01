@@ -157,14 +157,6 @@
     top: 97%;
     left: 75%;
     display: none;
-    overflow-y: scroll;
-}
-.cart-p{
-    position: absolute;
-    text-align: center;
-    font-size: 2rem;
-    top: 35%;
-    left: 30%;
 }
 .cart.active{
     display: flex;
@@ -173,6 +165,7 @@
 .cart-items{
     width: 35rem;
     height: 60vh;
+    overflow-y: scroll;
 }
 .cart-item{
     position: relative;
@@ -237,6 +230,7 @@
     background-color: cadetblue;
 }
 .cart-btn{
+    z-index: 2;
     padding: 2rem;
     background-color: black;
     color: aliceblue;

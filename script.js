@@ -81,17 +81,9 @@ const shoppingBag=document.getElementById('shopping-bag');
 const Cart=document.querySelector('.cart')
 shoppingBag.addEventListener('click',(event)=>{
     event.preventDefault();
-    if (Object.keys(cart).length === 0) {
-        buyNow.style.display = "none";
-        content = document.createElement('p');
-        content.classList.add('cart-p');
-        content.textContent = "Cart is empty";
-        Cart.appendChild(content);
-    }
     Cart.classList.add('active')
 })
 
-const buyNow=document.querySelector('.cart-btn');
 const cart={}; 
 
 
@@ -108,14 +100,6 @@ function addToCart(item) {
 function updateCartUI() {
     const cartItemsElement = document.querySelector('.cart-items')
     cartItemsElement.innerHTML = ''; 
-    if (Object.keys(cart).length !== 0 && cart.constructor === Object) {
-        buyNow.style.display = "block";
-        Cart.removeChild(content);
-    }
-    else if (Object.keys(cart).length === 0 && cart.constructor === Object) {
-        buyNow.style.display = "none";
-        Cart.appendChild(content);
-    }
     for (const i in cart) {
         const item = cart[i];
         const listItem = document.createElement('div');
